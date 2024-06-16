@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.top-menu,
+.bottom-menu {
+    display: flex;
+    justify-content: center;
+    padding-left: 5px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 30px;
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+.navbar li:last-child {
+    margin-right: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 0; /* Añade algo de espacio alrededor del texto */
+    position: relative; /* Necesario para el pseudo-elemento */
+}
+
+/* Estilo del pseudo-elemento */
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Animación al hacer hover */
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.order-btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primerbanner {
+    margin-top: 65px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.primerbanner img {
+    max-width: 100%;
+    height: auto;
+    width: 1100px;
+}
+
+.segundobanner {
+    margin-top: 45px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.segundobanner img {
+    height: auto;
+    width: 1100px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-item img {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.chattext {
+    font-size: 12px;
+}
+
+.tercer-banner {
+    margin-top: 45px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.tercer-banner img {
+    height: auto;
+    width: 1100px;
+}
+
+.cuarto-banner {
+    margin-top: 45px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cuarto-banner img {
+    height: auto;
+    width: 1100px;
+}
+
+/* Pie de página */
+.footer {
+    margin-left: 35px;
+    max-width: 80rem;
+    box-sizing: border-box;
+    border-width: 0px;
+    border-top: grey solid 1px;
+    margin: 80px auto;
+}
+
+.piepagina {
+    padding-top: 2rem;
+    margin: 0 auto;
+}
+
+.pie-contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.img-meso {
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.footer .links {
+    flex-direction: row;
+    display: flex;
+    margin: 40px 0;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    margin-left: 110px;
+}
+
+.footer .links a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.policy {
+    margin-left: 150px;
+}
+
+
